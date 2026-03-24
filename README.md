@@ -1,2 +1,0 @@
-# acces-ravela
-list buyer
