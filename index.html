@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuaMaster | Belajar Lua dari Nol</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <h2>🌙 Lua<span>Master</span></h2>
+        </div>
+        <ul class="nav-links">
+            <li onclick="navigate('home')" id="nav-home" class="active"><i class="fas fa-home"></i> Beranda</li>
+            <li onclick="navigate('materi')" id="nav-materi"><i class="fas fa-book"></i> Materi</li>
+            <li onclick="navigate('project')" id="nav-project"><i class="fas fa-gamepad"></i> Mini Project</li>
+            <li onclick="navigate('progress')" id="nav-progress"><i class="fas fa-chart-line"></i> Progress</li>
+        </ul>
+        <div class="user-badge" id="user-badge">
+            <i class="fas fa-medal"></i> <span id="badge-text">Newbie Lua</span>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Cari materi lua (misal: table)..." onkeyup="searchMateri()">
+            </div>
+            <div class="header-progress">
+                <span>XP: <strong id="xp-display">0</strong></span>
+            </div>
+        </header>
+
+        <div id="app-container">
+            </div>
+    </main>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
